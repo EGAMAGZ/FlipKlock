@@ -35,10 +35,15 @@ kotlin {
                 implementation(kotlin("test"))
             }
         }
+        // Desktop
         val desktopMain by getting
         val desktopTest by getting
+
+        // Android
         val androidMain by getting
         val androidUnitTest by getting
+
+        // iOS
         val iosX64Main by getting
         val iosArm64Main by getting
         val iosSimulatorArm64Main by getting
