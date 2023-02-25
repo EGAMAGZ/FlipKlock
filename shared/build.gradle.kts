@@ -11,6 +11,12 @@ kotlin {
             }
         }
     }
+
+    jvm("desktop"){
+        compilations.all {
+            kotlinOptions.jvmTarget = "11"
+        }
+    }
     
     listOf(
         iosX64(),
@@ -29,6 +35,8 @@ kotlin {
                 implementation(kotlin("test"))
             }
         }
+        val desktopMain by getting
+        val desktopTest by getting
         val androidMain by getting
         val androidUnitTest by getting
         val iosX64Main by getting
