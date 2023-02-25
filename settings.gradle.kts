@@ -17,4 +17,5 @@ dependencyResolutionManagement {
 rootProject.name = "FlipKlock"
 include(":androidApp")
 include(":shared")
+include(":shared-ui")
 include(":desktopApp")
